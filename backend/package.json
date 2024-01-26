@@ -1,0 +1,22 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "jxy's personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yejoyce8/personal-website.git"
+  },
+  "author": "Joyce Ye",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yejoyce8/personal-website/issues"
+  },
+  "homepage": "https://github.com/yejoyce8/personal-website#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
