@@ -1,10 +1,10 @@
-import Home from "../pages/Home.jsx";
+import HomePage from "../pages/HomePage.jsx";
 
 export default function Root() {
     return (
         <>
             <div>
-                <Home/>
+                <HomePage/>
             </div>
             {/*<div id="sidebar">*/}
             {/*    <h1>React Router Contacts</h1>*/}
