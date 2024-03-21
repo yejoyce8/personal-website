@@ -39,7 +39,7 @@ button {
   border-radius: 33px;
   border: 1px solid black;
   padding: 0.6em 1.2em;
-  font-size: 1em;
+  font-size: 1.2em;
   font-weight: 350;
   letter-spacing: 0.16em;
   font-family: inherit;
@@ -81,6 +81,15 @@ a:hover {
   top: 2em;
   left: 2em;
   z-index: 1; /* Ensure the button is above other content */
+}
+
+.icon-button {
+  font-size: 2em;
+  color: black;
+}
+
+.icon-button:hover {
+  color: pink;
 }
 
 .roboto-thin {
