@@ -1,9 +1,12 @@
 import '../index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
+import {useState} from "react";
+import {Link} from "react-router-dom";
 
 export default function HomePage() {
-
+    const [isHovered, setIsHovered] = useState(false);
     return (
         <div>
             <div className="container-center">
@@ -21,8 +24,15 @@ export default function HomePage() {
                         <button>DOWNLOAD MY RESUME</button>
                     </div>
                     <div style={{marginTop: '2em'}}>
-                        <a>
-                            LET'S CONNECT
+                        <a
+                            href="#"
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
+                        >
+                            <Link to="/contactMe">
+                                LET'S CONNECT
+                            </Link>
+                            {isHovered &&<FontAwesomeIcon icon={faArrowRight} style={{marginLeft: '1em'}} />}
                         </a>
                     </div>
                 </div>

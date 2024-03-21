@@ -58,6 +58,8 @@ a {
   font-size: 1em;
   font-weight: 350;
   letter-spacing: 0.16em;
+  color: black;
+  text-decoration: none;
 }
 
 a:hover {
