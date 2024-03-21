@@ -1,22 +1,26 @@
-export default function HomePage () {
+import '../index.css';
+
+export default function HomePage() {
 
     return (
         <div>
-            <section id="home">
-                <div>
-                    <button>Linkedin</button>
+            <div className="container-center">
+                <button className="top-left-button">Linkedin</button>
+                <div className="center">
+                    <h3>👋 Hey there! I’m</h3>
+                    <h1>JOYCE YE</h1>
+                    <div>
+                        <button>DOWNLOAD MY RESUME</button>
+                    </div>
+                    <div style={{marginTop: '2em'}}>
+                        <a >
+                            LET'S CONNECT
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <p>Hey there! I'm</p>
-                    <h1>Joyce Ye</h1>
-                </div>
-                <div>
-                    <button>Download my resume</button>
-                </div>
-                <div>
-                    <button>Let's connect</button>
-                </div>
-            </section>
+
+            </div>
+
         </div>
 
     )
