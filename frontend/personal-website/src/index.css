@@ -13,7 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 body {
   margin: 0;
   display: flex;
@@ -23,41 +22,76 @@ body {
 }
 
 h1 {
-  font-size: 5em;
+  font-size: 5.5em;
   line-height: 1.1;
-  font-weight: 200;
+  font-weight: 350;
+  letter-spacing: 0.27em;
+}
+
+h3 {
+  font-size: 1.7em;
+  line-height: 1.1;
+  font-weight: 350;
+  letter-spacing: 0.16em;
 }
 
 button {
-  border-radius: 8px;
-  border: 1px black;
+  border-radius: 33px;
+  border: 1px solid black;
   padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 1.2em;
+  font-weight: 350;
+  letter-spacing: 0.16em;
   font-family: inherit;
   background-color: transparent;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  font-weight: 450;
+  border: 2px solid black;
+
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+a {
+  font-size: 1em;
+  font-weight: 350;
+  letter-spacing: 0.16em;
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 450;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* This will center content vertically */
+  position: relative;
+}
+
+.center {
+  text-align: center;
+}
+
+.top-left-button {
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  z-index: 1; /* Ensure the button is above other content */
+}
+
+.icon-button {
+  font-size: 2em;
+  color: black;
+}
+
+.icon-button:hover {
+  color: pink;
 }
 
 .roboto-thin {
