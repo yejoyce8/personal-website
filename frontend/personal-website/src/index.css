@@ -26,6 +26,7 @@ h1 {
   line-height: 1.1;
   font-weight: 350;
   letter-spacing: 0.27em;
+  text-transform: uppercase;
 }
 
 h3 {
@@ -66,6 +67,18 @@ a:hover {
   font-weight: 450;
 }
 
+h2 {
+  font-weight: 350;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+p {
+  font-weight: 350;
+  letter-spacing: 0.16em;
+  font-size: 1em;
+}
+
 .container-center {
   display: flex;
   justify-content: center;
@@ -76,6 +89,21 @@ a:hover {
 
 .center {
   text-align: center;
+}
+
+.p-center {
+  text-align: center;
+  padding-left: 30vh;
+  padding-right: 30vh;
+  padding-bottom: 10vh;
+}
+
+.interests-text {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+  font-size: 4em;
 }
 
 .top-left-button {
