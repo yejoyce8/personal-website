@@ -8,9 +8,7 @@ export default function AboutMePage() {
                     <h2>I'm currently hyperfixated on</h2>
                     <div className="interests-text">Designing clothes</div>
                 </div>
-
             </div>
-
         </>
     )
 }
