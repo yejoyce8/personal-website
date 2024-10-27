@@ -78,6 +78,10 @@ p {
   font-size: 1em;
 }
 
+.top-page {
+  height: 150vh;
+}
+
 .page {
   height: 200vh;
 }

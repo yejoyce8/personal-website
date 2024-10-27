@@ -7,11 +7,15 @@ import useScrollNavigation from "../hooks/useScrollNavigation.jsx";
 import {motion} from "framer-motion";
 
 export default function HomePage() {
+    window.scrollTo({
+        behavior: "smooth",
+        top: 0
+    });
     useScrollNavigation("/aboutMe", "");
     const [isHovered, setIsHovered] = useState(false);
     return (
         <motion.div
-            className="page"
+            className="top-page"
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             exit={{opacity: 0}}
