@@ -118,7 +118,7 @@ p {
 }
 
 .top-left-button {
-  position: absolute;
+  position: fixed;
   top: 2em;
   left: 2em;
   z-index: 1; /* Ensure the button is above other content */
@@ -206,7 +206,7 @@ p {
 }
 
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 2em;
   right: 2em;
   z-index: 1; /* Ensure the button is above other content */
