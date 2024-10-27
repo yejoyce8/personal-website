@@ -10,13 +10,6 @@ export default function HomePage() {
     return (
         <div>
             <div className="container-center">
-                <a
-                    href="https://www.linkedin.com/in/joyce-ye-x/"
-                    className="top-left-button"
-                    target="_blank"
-                >
-                    <FontAwesomeIcon icon={faLinkedin} className="icon-button" />
-                </a>
                 <div className="center">
                     <h3>👋 Hey there! I’m</h3>
                     <h1>JOYCE YE</h1>

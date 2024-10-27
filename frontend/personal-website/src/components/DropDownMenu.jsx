@@ -1,19 +1,31 @@
 import React, {useState} from "react";
 import { NavLink} from "react-router-dom";
 import menuIcon from "../assets/MenuIcon.svg";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 function DropDownMenu() {
     const [isOpen, setIsOpen] = useState(false);
 
     return (
+        <div>
+            <a
+                href="https://www.linkedin.com/in/joyce-ye-x/"
+                className="top-left-button"
+                target="_blank"
+            >
+                <FontAwesomeIcon icon={faLinkedin} className="icon-button" />
+            </a>
+
         <div
             className="menu-container"
             onMouseEnter={() => setIsOpen(true)}
             onMouseLeave={() => setIsOpen(false)}
         >
+
             <button className="menu-button"><img src={menuIcon} alt=""/></button>
             {isOpen && (
                 <div className="dropdown">
-                    <NavLink to="/" className={({isActive}) => isActive? "active-link" : ""}>
+                    <NavLink to="/home" className={({isActive}) => isActive? "active-link" : ""}>
                         <div className="hover-underline-animation">
                             HOME
                         </div>
@@ -40,6 +52,7 @@ function DropDownMenu() {
                     </NavLink>
                 </div>
             )}
+        </div>
         </div>
     );
 }
