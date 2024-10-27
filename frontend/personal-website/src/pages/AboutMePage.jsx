@@ -1,4 +1,8 @@
+import useScrollNavigation from "../hooks/useScrollNavigation.jsx";
+
 export default function AboutMePage() {
+    useScrollNavigation("/work", "/home");
+
     return (
         <>
             <div className="container-center">

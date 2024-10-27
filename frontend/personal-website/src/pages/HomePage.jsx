@@ -4,8 +4,10 @@ import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {useState} from "react";
 import {Link} from "react-router-dom";
+import useScrollNavigation from "../hooks/useScrollNavigation.jsx";
 
 export default function HomePage() {
+    useScrollNavigation("/aboutMe", "/");
     const [isHovered, setIsHovered] = useState(false);
     return (
         <div>
