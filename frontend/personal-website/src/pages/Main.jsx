@@ -6,12 +6,23 @@ import ContactMePage from "./ContactMePage.jsx";
 
 export default function Main() {
     return (
-        <>
-            <HomePage/>
-            <AboutMePage/>
-            <WorkPage/>
-            <ProjectsPage/>
-            <ContactMePage/>
-        </>
+        <div>
+            <section id="home">
+                <HomePage/>
+            </section>
+            <section id="aboutMe">
+                <AboutMePage/>
+            </section>
+            <section id="work">
+                <WorkPage/>
+            </section>
+            <section id="projects">
+                <ProjectsPage/>
+            </section>
+            <section id="contactMe">
+                <ContactMePage/>
+            </section>
+
+        </div>
     )
 }

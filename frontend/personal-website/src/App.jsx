@@ -9,23 +9,26 @@ import AboutMePage from "./pages/AboutMePage.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 import WorkPage from "./pages/WorkPage.jsx";
 import StoryModePage from "./pages/StoryModePage.jsx";
+import {AnimatePresence} from "framer-motion";
 
 function App() {
+    return (
+        <BrowserRouter>
+            <DropDownMenu/>
+            <AnimatePresence>
+                <Routes>
+                    <Route path="/" element={<Main/>}/>
+                    <Route path="/home" element={<HomePage/>}/>
+                    <Route path="/aboutMe" element={<AboutMePage/>}/>
+                    <Route path="/contactMe" element={<ContactMePage/>}/>
+                    <Route path="/projects" element={<ProjectsPage/>}/>
+                    <Route path="/work" element={<WorkPage/>}/>
+                    <Route path="/storyMode" element={<StoryModePage/>}/>
+              </Routes>
+          </AnimatePresence>
 
-  return (
-      <BrowserRouter>
-        <DropDownMenu/>
-        <Routes>
-          <Route path="/" element={<Main/>}/>
-          <Route path="/home" element={<HomePage/>}/>
-          <Route path="/aboutMe" element={<AboutMePage/>}/>
-          <Route path="/contactMe" element={<ContactMePage/>}/>
-          <Route path="/projects" element={<ProjectsPage/>}/>
-          <Route path="/work" element={<WorkPage/>}/>
-          <Route path="/storyMode" element={<StoryModePage/>}/>
-        </Routes>
       </BrowserRouter>
   )
 }
 
-export default App
+export default App;

@@ -78,11 +78,23 @@ p {
   font-size: 1em;
 }
 
-.container-center {
+.page {
+  height: 200vh;
+}
+
+.top-container-center {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; /* This will center content vertically */
+  position: relative;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200vh; /* This will center content vertically */
   position: relative;
 }
 
@@ -106,7 +118,7 @@ p {
 }
 
 .top-left-button {
-  position: absolute;
+  position: fixed;
   top: 2em;
   left: 2em;
   z-index: 1; /* Ensure the button is above other content */
@@ -194,7 +206,7 @@ p {
 }
 
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 2em;
   right: 2em;
   z-index: 1; /* Ensure the button is above other content */
