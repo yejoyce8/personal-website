@@ -15,3 +15,4 @@ export default function useScrollNavigation(nextPage, prevPage) {
         return () => window.removeEventListener("scroll", handleScroll);
         }, [navigate, nextPage, prevPage]);
 }
+

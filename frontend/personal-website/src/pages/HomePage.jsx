@@ -1,17 +1,23 @@
 import '../index.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
 import {faArrowRight} from "@fortawesome/free-solid-svg-icons";
 import {useState} from "react";
 import {Link} from "react-router-dom";
 import useScrollNavigation from "../hooks/useScrollNavigation.jsx";
+import {motion} from "framer-motion";
 
 export default function HomePage() {
-    useScrollNavigation("/aboutMe", "/");
+    useScrollNavigation("/aboutMe", "");
     const [isHovered, setIsHovered] = useState(false);
     return (
-        <div>
-            <div className="container-center">
+        <motion.div
+            className="page"
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0}}
+            transition={{ duration: 0.5 }}
+        >
+            <div className="top-container-center">
                 <div className="center">
                     <h3>👋 Hey there! I’m</h3>
                     <h1>JOYCE YE</h1>
@@ -34,7 +40,7 @@ export default function HomePage() {
 
             </div>
 
-        </div>
+        </motion.div>
 
     )
 }
