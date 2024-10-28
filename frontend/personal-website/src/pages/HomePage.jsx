@@ -12,6 +12,7 @@ export default function HomePage() {
         top: 0
     });
     useScrollNavigation("/aboutMe", "");
+    document.documentElement.classList.remove('dark-mode');
     const [isHovered, setIsHovered] = useState(false);
     return (
         <motion.div

@@ -9,6 +9,7 @@ export default function AboutMePage() {
         behavior: "smooth",
         top: document.documentElement.scrollHeight / 2 - window.innerHeight / 2
     });
+    document.documentElement.classList.remove('dark-mode');
     useScrollNavigation("/work", "/home");
     const [index, setIndex] = useState(0);
     useEffect(() => {

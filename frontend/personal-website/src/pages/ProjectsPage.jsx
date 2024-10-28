@@ -6,6 +6,7 @@ export default function ProjectsPage() {
         behavior: "smooth",
         top: document.documentElement.scrollHeight / 2 - window.innerHeight / 2
     });
+    document.documentElement.classList.add('dark-mode');
     useScrollNavigation("/contactMe", "/work");
     return (
         <motion.div

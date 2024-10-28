@@ -9,6 +9,9 @@
     font-size: 2em;
     color: black;
 }
+.icon-button.dark-mode {
+    color: white;
+}
 
 .icon-button:hover {
     color: dimgrey;
@@ -65,11 +68,23 @@
     color: #ABABAB;
 }
 
+.dropdown.dark-mode a {
+    color: #727272;
+}
+
 .dropdown a:hover {
     color: black;
     font-weight: 350;
 }
 
+.dropdown.dark-mode a:hover {
+    color: white;
+}
+
 .dropdown a.active-link {
     color: black;
+}
+
+.dropdown.dark-mode a.active-link {
+    color: white;
 }

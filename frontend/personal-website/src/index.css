@@ -5,14 +5,17 @@
   font-weight: 100;
 
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+:root.dark-mode {
+  color: white;
+  background-color: black;
+}
 html {
   overflow-x: hidden;
 }
@@ -67,6 +70,10 @@ a {
   text-decoration: none;
 }
 
+a.dark-mode {
+  color: white;
+}
+
 a:hover {
   font-weight: 450;
 }
@@ -117,8 +124,6 @@ p {
   padding-right: 15vw;
   padding-bottom: 10vh;
 }
-
-
 
 .interests-text {
   text-transform: uppercase;
@@ -218,6 +223,10 @@ p {
   background-color: black;
   transform-origin: bottom center;
   transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation.dark-mode::after {
+  background-color: white;
 }
 
 .hover-underline-animation:hover::after {

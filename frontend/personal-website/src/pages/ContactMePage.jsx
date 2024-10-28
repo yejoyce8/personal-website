@@ -7,6 +7,7 @@ export default function ContactMePage() {
         top: document.documentElement.scrollHeight / 2 - window.innerHeight / 2
     });
     useScrollNavigation("", "/projects");
+    document.documentElement.classList.add('dark-mode');
     return (
         <motion.div
             className="page"
