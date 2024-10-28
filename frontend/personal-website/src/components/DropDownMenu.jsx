@@ -3,6 +3,7 @@ import { NavLink} from "react-router-dom";
 import menuIcon from "../assets/MenuIcon.svg";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faLinkedin} from "@fortawesome/free-brands-svg-icons";
+import './dropdownmenu.css';
 function DropDownMenu() {
     const [isOpen, setIsOpen] = useState(false);
 
