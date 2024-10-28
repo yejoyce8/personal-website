@@ -1,0 +1,41 @@
+.ocean {
+    height: 60%;
+    width: 100vw;
+    position: absolute;
+    top: 160%;
+    left: 0;
+    background: linear-gradient(#333333, #000000);
+}
+.wave {
+    background: url('../assets/blackwave.svg') repeat-x;
+    position: absolute;
+    top: -12rem;
+    width: 300vw;
+    height: 12rem;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+    top: -11rem;
+    animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+    0%, 100% {
+        transform: translateY(-1.5rem); /* Adjust for smoother bobbing */
+    }
+    50% {
+        transform: translateY(0.5rem);
+    }
+}

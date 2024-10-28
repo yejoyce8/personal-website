@@ -5,15 +5,23 @@
   font-weight: 100;
 
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: white;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+:root.dark-mode {
+  color: white;
+  background-color: black;
+}
+html {
+  overflow-x: hidden;
+}
 
 body {
+  overflow-x:hidden;
   margin: 0;
   display: flex;
   place-items: center;
@@ -62,6 +70,10 @@ a {
   text-decoration: none;
 }
 
+a.dark-mode {
+  color: white;
+}
+
 a:hover {
   font-weight: 450;
 }
@@ -75,7 +87,11 @@ h2 {
 p {
   font-weight: 350;
   letter-spacing: 0.16em;
-  font-size: 1em;
+  font-size: 1.2em;
+}
+
+.top-page {
+  height: 150vh;
 }
 
 .page {
@@ -104,8 +120,8 @@ p {
 
 .p-center {
   text-align: center;
-  padding-left: 30vh;
-  padding-right: 30vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
   padding-bottom: 10vh;
 }
 
@@ -115,22 +131,8 @@ p {
   letter-spacing: 0.2em;
   font-weight: 400;
   font-size: 4em;
-}
-
-.top-left-button {
-  position: fixed;
-  top: 2em;
-  left: 2em;
-  z-index: 1; /* Ensure the button is above other content */
-}
-
-.icon-button {
-  font-size: 2em;
-  color: black;
-}
-
-.icon-button:hover {
-  color: pink;
+  justify-self: center;
+  justify-content: center;
 }
 
 .roboto-thin {
@@ -205,66 +207,6 @@ p {
   font-style: italic;
 }
 
-.menu-container {
-  position: fixed;
-  top: 2em;
-  right: 2em;
-  z-index: 1; /* Ensure the button is above other content */
-}
-
-.menu-button {
-  padding: 10px 20px;
-  cursor: pointer;
-  border: none; /* Remove any borders */
-  background: none;
-  outline: none;
-  text-decoration: none; /* Ensure no underline */
-}
-
-.menu-button:hover {
-  border: none; /* Remove any borders */
-  background: none;
-  outline: none;
-  text-decoration: none; /* Ensure no underline */
-}
-
-.dropdown {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  padding: 10px 0;
-  min-width: 160px;
-  z-index: 1;
-  justify-items: right;
-  transform-origin: top center;
-  animation: fadeIn 600ms ease-in-out;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.dropdown a {
-  display: block;
-  padding: 8px 16px;
-  text-decoration: none;
-  color: #ABABAB;
-}
-
-.dropdown a:hover {
-  color: black;
-  font-weight: 350;
-}
-
-.dropdown a.active-link {
-  color: black;
-}
-
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -281,6 +223,10 @@ p {
   background-color: black;
   transform-origin: bottom center;
   transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation.dark-mode::after {
+  background-color: white;
 }
 
 .hover-underline-animation:hover::after {

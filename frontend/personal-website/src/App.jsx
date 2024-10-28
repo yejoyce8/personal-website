@@ -10,6 +10,7 @@ import ProjectsPage from "./pages/ProjectsPage.jsx";
 import WorkPage from "./pages/WorkPage.jsx";
 import StoryModePage from "./pages/StoryModePage.jsx";
 import {AnimatePresence} from "framer-motion";
+import WorkDetailsPage from "./pages/WorkDetailsPage.jsx";
 
 function App() {
     return (
@@ -23,6 +24,7 @@ function App() {
                     <Route path="/contactMe" element={<ContactMePage/>}/>
                     <Route path="/projects" element={<ProjectsPage/>}/>
                     <Route path="/work" element={<WorkPage/>}/>
+                    <Route path="/work/:id" element={<WorkDetailsPage />}/>
                     <Route path="/storyMode" element={<StoryModePage/>}/>
               </Routes>
           </AnimatePresence>

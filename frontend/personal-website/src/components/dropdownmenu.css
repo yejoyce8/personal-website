@@ -1,0 +1,90 @@
+.top-left-button {
+    position: fixed;
+    top: 2em;
+    left: 2em;
+    z-index: 1; /* Ensure the button is above other content */
+}
+
+.icon-button {
+    font-size: 2em;
+    color: black;
+}
+.icon-button.dark-mode {
+    color: white;
+}
+
+.icon-button:hover {
+    color: dimgrey;
+}
+
+.menu-container {
+    position: fixed;
+    top: 2em;
+    right: 2em;
+    z-index: 1; /* Ensure the button is above other content */
+}
+
+.menu-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none; /* Remove any borders */
+    background: none;
+    outline: none;
+    text-decoration: none; /* Ensure no underline */
+}
+
+.menu-button:hover {
+    border: none; /* Remove any borders */
+    background: none;
+    outline: none;
+    text-decoration: none; /* Ensure no underline */
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 10px 0;
+    min-width: 160px;
+    z-index: 1;
+    justify-items: right;
+    transform-origin: top center;
+    animation: fadeIn 600ms ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.dropdown a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #ABABAB;
+}
+
+.dropdown.dark-mode a {
+    color: #727272;
+}
+
+.dropdown a:hover {
+    color: black;
+    font-weight: 350;
+}
+
+.dropdown.dark-mode a:hover {
+    color: white;
+}
+
+.dropdown a.active-link {
+    color: black;
+}
+
+.dropdown.dark-mode a.active-link {
+    color: white;
+}
