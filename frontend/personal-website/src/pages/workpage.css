@@ -1,3 +1,81 @@
 .work-card {
     justify-items: left;
 }
+
+@property --angle {
+    syntax: '<angle>';
+    inherits: true;
+    initial-value: 0deg;
+}
+
+@keyframes revolve {
+    from { --angle: 0deg; }
+    to { --angle: 360deg; }
+}
+
+.planet {
+    grid-area: 1 / 1;
+    padding: 10px;
+    background-color: white;
+    position: absolute;
+    margin-left: -100vw;
+    width: 25vw;            /* Width of the circle */
+    height: 25vw;           /* Height of the circle */
+    border-radius: 50%;      /* This creates the circle shape */
+}
+
+.orbit {
+    grid-area: 1 / 1;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid white ;
+    position: absolute;
+    margin-left: -100vw;
+    width: 40vw;            /* Width of the circle */
+    height: 40vw;           /* Height of the circle */
+    border-radius: 50%;      /* This creates the circle shape */
+}
+
+.orbit.orbit-2 {
+    border: 1px solid white ;
+    width: 29vw;            /* Width of the circle */
+    height: 29vw;           /* Height of the circle */
+}
+
+.orbit.orbit-3 {
+    border: 1px dashed white ;
+    width: 34vw;            /* Width of the circle */
+    height: 34vw;           /* Height of the circle */
+}
+
+.moon {
+    background-color: white;
+    position: absolute;
+    margin-left: -100vw;
+    width: 3vw;            /* Width of the circle */
+    height: 3vw;           /* Height of the circle */
+    border-radius: 50%;      /* This creates the circle shape */
+
+    --amplitude: 20.4vw;
+    --x: calc(cos(var(--angle)) * var(--amplitude));
+    --y: calc(sin(var(--angle)) * var(--amplitude));
+    translate: var(--x) var(--y);
+    animation: revolve 12s linear infinite;
+}
+
+.moon.moon-2 {
+    margin-left: -100vw;
+    --amplitude: 15vw;
+    width: 1vw;
+    height: 1vw;
+    animation: revolve 8s linear infinite;
+}
+
+.moon.moon-3 {
+    animation: revolve 10s linear infinite;
+    margin-left: -100vw;
+    --amplitude: 17.5vw;
+    width: 1.5vw;
+    height: 1.5vw;
+    animation: revolve 10s linear infinite;
+}

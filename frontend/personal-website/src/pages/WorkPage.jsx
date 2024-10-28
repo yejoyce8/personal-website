@@ -10,7 +10,7 @@ export default function WorkPage() {
    document.documentElement.classList.add('dark-mode');
     //useScrollNavigation("/projects", "/aboutMe");
         return (
-            <div>
+
                 <motion.div
                     className="page"
                     initial={{opacity: 0}}
@@ -18,8 +18,21 @@ export default function WorkPage() {
                     exit={{opacity: 0}}
                     transition={{ duration: 0.5 }}
                 >
+
                     <div className="container-center">
-                        <div >
+                        <div className="planet">
+                        </div>
+                        <div className="orbit"></div>
+                        <div className="orbit orbit-2"></div>
+                        <div className="orbit orbit-3"></div>
+
+
+                        <div className="moon"></div>
+                        <div className="moon moon-2"></div>
+                        <div className="moon moon-3"></div>
+
+                        <div>
+
                             <WorkCard
                                 startDate={workData[0].startDate}
                                 endDate={workData[0].endDate}
@@ -28,10 +41,9 @@ export default function WorkPage() {
                                 tech={workData[0].tech}
                             />
                         </div>
-                        {/*<h1>Work page</h1>*/}
                     </div>
                 </motion.div>
-            </div>
+
     )
 }
 
@@ -43,6 +55,13 @@ const workData = [
         endDate: "Aug 2022",
         tech: ["Java", "gRPC", "REST", "JUnit", "Mockito", "Guice"]
     },
+    {
+        startDate: "January 2023",
+        endDate: "Present",
+        company: "Tech Corp",
+        position: "Software Engineer",
+        tech: ["JavaScript", "React", "Node.js"]
+    }
 
 ]
 
