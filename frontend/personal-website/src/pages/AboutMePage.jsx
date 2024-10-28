@@ -1,6 +1,6 @@
 import useScrollNavigation from "../hooks/useScrollNavigation.jsx";
 import {motion} from "framer-motion";
-
+import "./aboutme.css"
 export default function AboutMePage() {
     window.scrollTo({
         behavior: "smooth",
@@ -22,6 +22,10 @@ export default function AboutMePage() {
                     <h2>I'm currently hyperfixated on</h2>
                     <div className="interests-text">Designing clothes</div>
                 </div>
+            </div>
+            <div className="ocean">
+                <div className="wave"></div>
+                <div className="wave"></div>
             </div>
         </motion.div>
     )

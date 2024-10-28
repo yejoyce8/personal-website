@@ -13,7 +13,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
+  overflow-x:hidden;
   margin: 0;
   display: flex;
   place-items: center;
