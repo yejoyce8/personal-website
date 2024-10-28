@@ -80,7 +80,7 @@ h2 {
 p {
   font-weight: 350;
   letter-spacing: 0.16em;
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 .top-page {
@@ -113,10 +113,12 @@ p {
 
 .p-center {
   text-align: center;
-  padding-left: 30vh;
-  padding-right: 30vh;
+  padding-left: 15vw;
+  padding-right: 15vw;
   padding-bottom: 10vh;
 }
+
+
 
 .interests-text {
   text-transform: uppercase;
@@ -124,6 +126,8 @@ p {
   letter-spacing: 0.2em;
   font-weight: 400;
   font-size: 4em;
+  justify-self: center;
+  justify-content: center;
 }
 
 .roboto-thin {
